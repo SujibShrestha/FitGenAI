@@ -2,6 +2,7 @@ import express, { type Request, type Response } from "express"
 import cors from "cors"
 import { prisma } from "./config/db.js"
 import { config } from "dotenv"
+import authRoute from "./routes/auth.route.js"
 
 config()
 
@@ -10,6 +11,9 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.json())
 app.use(cors())
+
+//Routes
+app.use("/api/v1/auth",authRoute)
 
 
 app.get("/",(req:Request,res:Response)=>{

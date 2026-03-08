@@ -1,3 +1,4 @@
+import Auth from "./pages/Auth"
 
 
 
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      This is frontend
+     <Auth/>
     </>
   )
 }
