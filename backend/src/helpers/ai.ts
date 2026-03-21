@@ -1,4 +1,4 @@
-import OpenAI from "openai";
+import { OpenAI } from "openai";
 import { config } from "dotenv";
 import type { TrainingPlan, UserProfile } from "../@types/types.js";
 
